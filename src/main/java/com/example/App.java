@@ -41,5 +41,9 @@ public class App
         session.persist(ad);
         tx.commit();
         session.close();
+
     }
 }
+//find() -> find method of Hibernate Session return null if object is not found in cache as well as on database.
+//find() involves database hit if object doesn't exist in session cache and returns fully initialized object which may involves several database call
+//
